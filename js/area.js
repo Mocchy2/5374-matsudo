@@ -70,7 +70,7 @@
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「小沼」です。";		            			 
 			            		} else if(address.match(/坂戸市小山/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「小山」です。";		            			 
-			            		} else if(address.match(/柏市/)) {
+			            		} else if(address.match(/坂戸市坂戸/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「坂戸」です。";		            			 
 			            		} else if(address.match(/坂戸市沢木/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「沢木」です。";		            			 
