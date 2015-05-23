@@ -7,7 +7,7 @@ $(function(){
 			$("#hinmoku").append('<option value="'+resultArray2+'">' + resultArray);
 
 			$("#hinmoku").change(function() {
-			        var myValue = $("#kekka option:selected").val();
+			        var myValue = $("#hinmoku option:selected").val();
 			        $("#hinmoku2").css('color', 'red').text(myValue);
 			});
 		}
