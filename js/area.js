@@ -22,10 +22,10 @@
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「青木」です。";
 			            		} else if(address.match(/坂戸市赤尾/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「赤尾」です。";
-			            		} else if(address.match(/柏市/)) {
+			            		} else if(address.match(/坂戸市浅羽/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「浅羽」です。";
 			            		} else if(address.match(/坂戸市浅羽野[1-3]丁目/)) {
-			            			 document.getElementById("judge").innerHTML = "お使いの地域は「浅羽野1-3丁目」です。";		            			 
+			            			 document.getElementById("judge").innerHTML = "お使いの地域は「浅羽野1～3丁目」です。";		            			 
 			            		} else if(address.match(/坂戸市厚川/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「厚川」です。";		            			 
 			            		} else if(address.match(/坂戸市芦山町/)) {
@@ -85,13 +85,13 @@
 			            		} else if(address.match(/坂戸市成願寺/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「成願寺」です。";		            			 
 			            		} else if(address.match(/坂戸市関間[1-4]丁目/)) {
-			            			 document.getElementById("judge").innerHTML = "お使いの地域は「関間1-4丁目」です。";		            			 
+			            			 document.getElementById("judge").innerHTML = "お使いの地域は「関間1～4丁目」です。";		            			 
 			            		} else if(address.match(/坂戸市善能寺/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「善能寺」です。";		            			 
 			            		} else if(address.match(/坂戸市多和目/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「多和目」です。";		            			 
 			            		} else if(address.match(/坂戸市千代田[1-5]丁目/)) {
-			            			 document.getElementById("judge").innerHTML = "お使いの地域は「千代田1-5丁目」です。";		            			 
+			            			 document.getElementById("judge").innerHTML = "お使いの地域は「千代田1～5丁目」です。";		            			 
 			            		} else if(address.match(/坂戸市千代田4丁目7番/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「千代田4丁目7番」です。";		            			 
 			            		} else if(address.match(/坂戸市塚越/)) {
@@ -99,7 +99,7 @@
 			            		} else if(address.match(/坂戸市塚崎/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「塚崎」です。";		            			 
 			            		} else if(address.match(/坂戸市鶴舞[1-4]丁目/)) {
-			            			 document.getElementById("judge").innerHTML = "お使いの地域は「鶴舞1-4丁目」です。";		            			 
+			            			 document.getElementById("judge").innerHTML = "お使いの地域は「鶴舞1～4丁目」です。";		            			 
 			            		} else if(address.match(/坂戸市戸口/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「戸口」です。";		            			 
 			            		} else if(address.match(/坂戸市中里/)) {
@@ -113,13 +113,13 @@
 			            		} else if(address.match(/坂戸市新堀/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「新堀」です。";		            			 
 			            		} else if(address.match(/坂戸市西坂戸[1-5]丁目/)) {
-			            			 document.getElementById("judge").innerHTML = "お使いの地域は「西坂戸1-5丁目」です。";		            			 
-			            		} else if(address.match(/坂戸市にっさい花みず木[1-8]丁目/)) {
-			            			 document.getElementById("judge").innerHTML = "お使いの地域は「にっさい花みず木1-8丁目」です。";		            			 
+			            			 document.getElementById("judge").innerHTML = "お使いの地域は「西坂戸1～5丁目」です。";		            			 
+			            		} else if(address.match(/柏市/)) {
+			            			 document.getElementById("judge").innerHTML = "お使いの地域は「にっさい花みず木1～8丁目」です。";		            			 
 			            		} else if(address.match(/坂戸市花影町/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「花影町」です。";		            			 
 			            		} else if(address.match(/坂戸市東坂戸[1-2]丁目/)) {
-			            			 document.getElementById("judge").innerHTML = "お使いの地域は「東坂戸1-2丁目」です。";		            			 
+			            			 document.getElementById("judge").innerHTML = "お使いの地域は「東坂戸1～2丁目」です。";		            			 
 			            		} else if(address.match(/坂戸市東和田/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「東和田」です。";		            			 
 			            		} else if(address.match(/坂戸市日の出町/)) {
@@ -139,7 +139,7 @@
 			            		} else if(address.match(/坂戸市柳町/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「柳町」です。";		            			 
 			            		} else if(address.match(/坂戸市八幡[1-2]丁目/)) {
-			            			 document.getElementById("judge").innerHTML = "お使いの地域は「八幡1-2丁目」です。";		            			 
+			            			 document.getElementById("judge").innerHTML = "お使いの地域は「八幡1～2丁目」です。";		            			 
 			            		} else if(address.match(/坂戸市山田町/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「山田町」です。";		            			 
 			            		} else if(address.match(/坂戸市横沼/)) {
@@ -148,7 +148,7 @@
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「四日市場」です。";		            			 
 			            		} else {
 			            			alert("範囲外です。");
-			            		}
+			            		} //坂戸市にっさい花みず木[1-8]丁目
 	
 			            } else {
 			                alert("エラー！");
