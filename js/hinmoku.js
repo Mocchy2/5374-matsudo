@@ -5,10 +5,10 @@ $(function(){
 			var resultArray = csvData.split("\n")[i].split(",")[1];
 			var resultArray2 = csvData.split("\n")[i].split(",")[0];
 			$("#hinmoku").append('<option value="'+resultArray2+'">' + resultArray)
-			.change(function() {
-			        var myValue = $("#hinmoku option:selected").val();
-			        $("#hinmoku2").text(myValue);
-			});
+					.change(function() {
+					        var myValue = $("#hinmoku option:selected").val();
+					        $("#hinmoku2").text(myValue);
+					});
 		}
 	});
 });
