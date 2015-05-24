@@ -6,7 +6,6 @@ $(function(){
 			var cell2 = csvData.split("\n")[i].split(",")[1];
 			$("#hinmoku").append('<option value="'+cell+'">' + cell2)
 					.change(function() {
-//						var value = $("#hinmoku option:selected").val();
 					        $("#hinmoku2").text($("#hinmoku option:selected").val());
 					});
 		}
