@@ -114,7 +114,7 @@
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「新堀」です。";		            			 
 			            		} else if(address.match(/坂戸市西坂戸[1-5]丁目/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「西坂戸1～5丁目」です。";		            			 
-			            		} else if(address.match(/柏市/)) {
+			            		} else if(address.match(/坂戸市にっさい花みず木[1-8]丁目/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「にっさい花みず木1～8丁目」です。";		            			 
 			            		} else if(address.match(/坂戸市花影町/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「花影町」です。";		            			 
@@ -148,7 +148,7 @@
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「四日市場」です。";		            			 
 			            		} else {
 			            			alert("範囲外です。");
-			            		} //坂戸市にっさい花みず木[1-8]丁目
+			            		}
 	
 			            } else {
 			                alert("エラー！");
