@@ -6,7 +6,8 @@ $(function(){
 			var cell2 = csvData.split("\n")[i].split(",")[1];
 			$("#hinmoku").append('<option value="'+cell+'">' + rcell2)
 					.change(function() {
-					        $("#hinmoku2").text($("#hinmoku option:selected").val());
+						var value = $("#hinmoku option:selected").val();
+					        $("#hinmoku2").text(value);
 					});
 		}
 	});
