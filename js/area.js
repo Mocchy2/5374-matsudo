@@ -22,7 +22,7 @@
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「青木」です。";
 			            		} else if(address.match(/坂戸市赤尾/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「赤尾」です。";
-			            		} else if(address.match(/坂戸市浅羽/)) {
+			            		} else if(address.match(/柏市/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「浅羽」です。";
 			            		} else if(address.match(/坂戸市浅羽野[1-3]丁目/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「浅羽野1-3丁目」です。";		            			 
