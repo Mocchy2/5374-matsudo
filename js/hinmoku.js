@@ -10,7 +10,9 @@ $(function(){
 			arr1.push(row1);
 			arr2.push(row2);
 		}
-		
+		alert(arr1[5]);
+		alert(arr2[7]);
+/*		
 		var s = "<select>";
 		for(var j in csvData) {
 			s += "<option value='"+arr1[j]+"'>"+arr2[j];
@@ -19,7 +21,7 @@ $(function(){
 		$("#hinmoku")[0].html(s);
 	});
 });
-
+*/
 /*
 $(function(){
 	//csvデータの読込
