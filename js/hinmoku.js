@@ -2,16 +2,17 @@ $(function(){
 	//csvデータの読込
 	$.get("data/target.csv", function(csvData){
 		var arr1 = [];
-		var arr2 = [];
+//		var arr2 = [];
 		
 		for(var i=0; i<10; i++) {
 			var row1 = csvData.split("\n")[i].split(",")[0];
 			var row2 = csvData.split("\n")[i].split(",")[1];
 			arr1.push(row1);
-			arr2.push(row2);
+//			arr2.push(row2);
+			alert(arr1[i]);
 		}
-		alert(arr1[5]);
-		alert(arr2[7]);
+
+//		alert(arr2[7]);
 /*		
 		var s = "<select>";
 		for(var j in csvData) {
