@@ -8,7 +8,7 @@
 				s = "<select>";
 
 			for (var i in line) {
-				if(i == 0) continue;
+				if(line[i] == 0) continue;
 				if(line[i].length == 0) continue;
 
 				var row1 = line[i].split(",")[1];
