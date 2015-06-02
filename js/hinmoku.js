@@ -8,17 +8,18 @@
 				s = "<select>";
 
 			for (var i in line) {
+				if(i == 0) continue;
 				if(line[i].length == 0) continue;
 
-				var row1 = line[i].split(",")[0];
-				var row2 = line[i].split(",")[1];
+				var row1 = line[i].split(",")[1];
+				var row2 = line[i].split(",")[0];
 				ret1.push(row1);
 				ret2.push(row2);
 			}
 //			document.write(ret, "<br/>");
 
-			for (var j in ret1) {
-				s += "<option value='"+ret2[j]+"'>"+ret1[j];
+			for (var j in ret2) {
+				s += "<option value='"+ret1[j]+"'>"+ret2[j];
 			}
 			s += "</select>"
 //			document.write(s, "<br/>");
