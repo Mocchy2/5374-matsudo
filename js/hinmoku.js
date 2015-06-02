@@ -16,7 +16,6 @@
 				ret2.push(row2);
 			}
 //			document.write(ret, "<br/>");
-			ret1.unshift("<option>ごみの種類を選択してください");
 
 			for (var j in ret1) {
 				s += "<option value='"+ret1[j]+"'>"+ret2[j];
@@ -24,7 +23,7 @@
 			s += "</select>"
 //			document.write(s, "<br/>");
 //			document.getElementById("hinmoku").innerHTML = s;
-			$("#hinmoku").html(s);
+			$("#hinmoku").append(s);
 
 			$("#hinmoku").change(function() {
 				$("#hinmoku2").text($("#hinmoku option:selected").val());
