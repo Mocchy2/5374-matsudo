@@ -7,8 +7,7 @@
 				ret2 = [],
 				s = "<select>";
 
-			for (var i in line) {
-				if(line[i] == 0) continue;
+			for (var i=1; i<line.length; i++) {
 				if(line[i].length == 0) continue;
 
 				var row1 = line[i].split(",")[0];
