@@ -23,7 +23,7 @@
 //			s += "</select>"
 //			document.write(s, "<br/>");
 //			document.getElementById("hinmoku").innerHTML = s;
-			$("#hinmoku").append(s);
+			$("#hinmoku").html(s);
 
 			$("#hinmoku").change(function() {
 				$("#hinmoku2").text($("#hinmoku option:selected").val());
