@@ -6,7 +6,7 @@ $(function(){
 		
 		for(var i=0; i<10; i++) {
 			var row1 = csvData.split("\n")[i].split(",")[0];
-			var row2 = csvData.split("\n")[i].split(",")[1];
+//			var row2 = csvData.split("\n")[i].split(",")[1];
 			arr1.push(row1);
 //			arr2.push(row2);
 			alert(arr1[i]);
