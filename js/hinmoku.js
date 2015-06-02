@@ -4,7 +4,7 @@ $(function(){
 		var arr1 = [];
 		var arr2 = [];
 		
-		for(var i in csvData) {
+		for(var i=0; i<10; i++) {
 			var row1 = csvData.split("\n")[i].split(",")[0];
 			var row2 = csvData.split("\n")[i].split(",")[1];
 			arr1.push(row1);
