@@ -16,7 +16,7 @@ $(function(){
 			s += "<option value='"+arr1[j]+"'>"+arr2[j];
 		}
 		s += "</select>";
-		$("#hinmoku")[0].html() = s;
+		$("#hinmoku")[0].html(s);
 	});
 });
 
