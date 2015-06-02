@@ -18,8 +18,8 @@
 			}
 //			document.write(ret, "<br/>");
 
-			for (var j in ret2) {
-				s += "<option value='"+ret1[j]+"'>"+ret2[j];
+			for (var j in ret1) {
+				s += "<option value='"+ret2[j]+"'>"+ret1[j];
 			}
 			s += "</select>"
 //			document.write(s, "<br/>");
