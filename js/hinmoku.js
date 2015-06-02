@@ -5,7 +5,7 @@
 			var line = csvData.split("\n"),
 				ret1 = [],
 				ret2 = [],
-				s = "<select>";
+//				s = "<select>";
 
 			for (var i=1; i<line.length; i++) {
 				if(line[i].length == 0) continue;
@@ -20,7 +20,7 @@
 			for (var j in ret1) {
 				s += "<option value='"+ret1[j]+"'>"+ret2[j];
 			}
-			s += "</select>"
+//			s += "</select>"
 //			document.write(s, "<br/>");
 //			document.getElementById("hinmoku").innerHTML = s;
 			$("#hinmoku").append(s);
