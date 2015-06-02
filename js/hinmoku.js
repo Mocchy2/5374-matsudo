@@ -6,6 +6,8 @@
 				ret1 = [],
 				ret2 = [],
 				s = "<select>";
+				
+			s += "<option value=''>ごみの種類を選択してください";
 
 			for (var i=1; i<line.length; i++) {
 				if(line[i].length == 0) continue;
@@ -16,7 +18,7 @@
 				ret2.push(row2);
 			}
 //			document.write(ret, "<br/>");
-			s += "<option vaule=''>ごみの種類を選択してください";
+			
 			for (var j in ret1) {
 				s += "<option value='"+ret1[j]+"'>"+ret2[j];
 			}
