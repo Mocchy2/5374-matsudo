@@ -36,13 +36,13 @@
     <style id="accordion-style" type="text/css"></style>
     <div id="accordion"></div>
     <select class="form-control" id="select_area"></select>
-    <div class="accordion" id="accordion3">
+  <div class="accordion" id="accordion3">
   
     <br/>
     <div style="text-align: center">  
       <input type="button" value="現在地を調べる" onclick="getPosition()">
     </div>
-    <div id="map"></div> <!--地図を表示する領域-->
+    
     <div id="judge"></div> <!--地域を判定する領域-->
     
     <div class="accordion-group-top">
@@ -101,13 +101,30 @@
       </div>
     </div>
     
-    <hr>
+    <hr/>
     
     <div class="accordion-group-top">
       <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_1">ごみの種類を調べる</a>
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_1">使い方</a>
       </div>
       <div id="collapse3_1" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <div id="help">
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr/>
+    
+    <div class="accordion-group-top">
+      <div class="accordion-heading">
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_2">ごみの種類を調べる</a>
+      </div>
+      <div id="collapse3_2" class="accordion-body collapse">
         <div class="accordion-inner">
           <div id="help">
           
@@ -119,7 +136,24 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
+    
+    <hr/>
+    
+        <div class="accordion-group-top">
+      <div class="accordion-heading">
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_3">地図表示</a>
+      </div>
+      <div id="collapse3_3" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <div id="help">
+            
+          <div id="map"></div> <!--地図を表示する領域-->  
+            
+          </div>
+        </div>
+      </div>
+    </div>
     
   </div>
   <hr/>
