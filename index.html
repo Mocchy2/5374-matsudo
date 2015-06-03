@@ -11,6 +11,10 @@
     <link href="css/custom.css" rel="stylesheet" media="screen" />
  
     <style type = "text/css">
+    	#map {
+			  width: 100%; /*マップの幅*/
+			  height: 80%; /*マップの高さ*/
+		  }
       #hinmoku {max-width: 100%}
       #hinmoku2 {
         color: red; 
@@ -105,9 +109,9 @@
     
     <div class="accordion-group-top">
       <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_1">使い方</a>
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse4_0">使い方</a>
       </div>
-      <div id="collapse3_1" class="accordion-body collapse">
+      <div id="collapse4_0" class="accordion-body collapse">
         <div class="accordion-inner">
           <div id="help">
             
@@ -122,9 +126,9 @@
     
     <div class="accordion-group-top">
       <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_2">ごみの種類を調べる</a>
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_1">ごみの種類を調べる</a>
       </div>
-      <div id="collapse3_2" class="accordion-body collapse">
+      <div id="collapse3_1" class="accordion-body collapse">
         <div class="accordion-inner">
           <div id="help">
           
@@ -140,15 +144,16 @@
     
     <hr/>
     
-        <div class="accordion-group-top">
+    <div class="accordion-group-top">
       <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_3">地図表示</a>
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_2">地図表示</a>
       </div>
-      <div id="collapse3_3" class="accordion-body collapse">
+      <div id="collapse3_2" class="accordion-body collapse">
         <div class="accordion-inner">
           <div id="help">
             
           <div id="map"></div> <!--地図を表示する領域-->  
+          <div id="jusyo"></div> <!--住所を表示する領域-->
             
           </div>
         </div>
@@ -156,7 +161,9 @@
     </div>
     
   </div>
+  
   <hr/>
+  
   <div id="footer">©立正大学　地球環境科学部　環境システム学科　後藤研究室</div>
   
   <!-- JavaScript plugins (requires jQuery) -->
