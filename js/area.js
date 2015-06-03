@@ -1,7 +1,9 @@
 		var geocoder = new google.maps.Geocoder(); //ジオコーダー
 		var latlng = new google.maps.LatLng(0, 0); //緯度経度を示すオブジェクト
 		var options = {
+			zoom: 15, //地図のズームレベル
 			center: latlng, //地図の中心の緯度経度
+			mapTypeId: google.maps.MapTypeId.ROADMAP //地図の種類（ここでは通常の地図）
 		}
 		var mymap = new google.maps.Map(document.getElementById('map'), options); //地図を作製する
 
@@ -10,13 +12,19 @@
 			if(navigator.geolocation){ //navigator（ブラウザのこと）がgeolocationに対応していた場合
 			    navigator.geolocation.getCurrentPosition(function (position) { //現在地の取得
 			        mymap.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude)); //取得した緯度経度をもとにマップを移動させる
-	
+				
+				var marker =new google.maps.Marker({ //マーカーを立てる
+					position: mymap.getCenter(), //現在地で求めた中心地を緯度経度で返す
+					map: mymap //描画先はマップ
+				});
+				
 			        geocoder.geocode({ //ジオコーダー
 			            'latLng': mymap.getCenter() //リバースジオコーディングしたい場所の緯度経度
 			        }, function (result, status) {
 			            if (status == google.maps.GeocoderStatus.OK) { //正しく住所から緯度経度などの情報を取得
 	
-			                var address = result[0].formatted_address;
+			                var address = result[0].formatted_address.replace(/^日本, 〒[0-9]{3}-[0-9]{4}/, "");
+			                document.getElementById("jusyo").innerHTML = address + "にいます。";
 	
 			            		if(address.match(/坂戸市青木/)) {
 			            			 document.getElementById("judge").innerHTML = "お使いの地域は「青木」です。";
