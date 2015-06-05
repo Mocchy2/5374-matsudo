@@ -24,6 +24,7 @@
 			s += "</select>"
 
 			$("#hinmoku").html(s).change(function() { //表示
+				// ↓id属性hinmoku2にごみの種類を表示
 				$("#hinmoku2").text($("#hinmoku option:selected").val()); 
 			});
 			
