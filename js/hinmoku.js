@@ -6,7 +6,7 @@ $(function() {
 			ret1 = [], //ごみの種類 配列
 			ret2 = [], //ごみ品目　 配列
 			s = "<select>";
-		      	
+	　	
 		s += "<option value=''>ごみの種類を選択してください";
 
 		for (var i=1; i<line.length; i++) {
