@@ -5,7 +5,8 @@ $(function() {
 		var line = csvData.split("\n"),
 			ret1 = [], //ごみの種類 配列
 			ret2 = [], //ごみ品目　 配列
-			s = "<select>";
+			ret3 = [], //注意事項　配列
+			s = "";
 	　	
 		s += "<option value=''>ごみの種類を選択してください";
 
@@ -14,14 +15,15 @@ $(function() {
 
 			var row1 = line[i].split(",")[0];
 			var row2 = line[i].split(",")[1];
+			var row3 = line[i].split(",")[2];
 			ret1.push(row1);
 			ret2.push(row2);
+			ret3.push(row3);
 		}
 
 		for (var j in ret1) {
-			s += "<option value='"+ret1[j]+"'>"+ret2[j]; //セレクトボックス作成
+			s += "<option value='"+ret1[j]+"'>"+ret2[j]+"("+ret3[j]+")"; //セレクトボックス作成
 		}
-		s += "</select>"
 
 		$("#hinmoku").html(s).change(function() { //表示
 			// ↓id属性hinmoku2にごみの種類を表示
