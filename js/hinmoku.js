@@ -22,7 +22,7 @@ $(function() {
 		}
 
 		for (var j in ret1) {
-			s += "<option value='"+ret1[j]+"'>"+ret2[j]+"("+ret3[j]+")"; //セレクトボックス作成
+			s += "<option value='"+ret1[j]+"'>"+ret2[j]+" "+ret3[j]; //セレクトボックス作成
 		}
 
 		$("#hinmoku").html(s).change(function() { //表示
