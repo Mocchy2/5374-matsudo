@@ -1,4 +1,4 @@
-﻿$(function() {
+$(function() {
   //テキストデータの読込
   $.get("data/target.csv", function(csvData) {
     csvData = csvData.replace("/\r/gm", "");
