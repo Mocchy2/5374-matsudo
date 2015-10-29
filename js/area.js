@@ -155,7 +155,7 @@ function getPosition() {
           } else if(address.match(/坂戸市四日市場/)) {
             document.getElementById("judge").innerHTML = "お使いの地域は「四日市場」です";                      
           } else {
-            alert("範囲外です");
+            alert("地域を特定できません！");
           }
             
         } else {
